@@ -26,7 +26,11 @@ public class PlusGrandeValeurTableau {
             tableau[i] = rand.nextInt(101); // Génère des entiers aléatoires de 0 à 100.
         }
 
-
+// Initialisationsdes variables pour stocker le plus grand, le plus petit, et leurs index correspondants.
+int plusGrand = tableau[0]; // Suppose que le plus grand est le premier élément du tableau.
+int plusPetit = tableau[0]; // Suppose que le plus petit est le premier élément du tableau.
+int indexPlusGrand = 0; // Initialise l'index du plus grand.
+int indexPlusPetit = 0; // Initialise l'index du plus petit.
         
 }
 }
