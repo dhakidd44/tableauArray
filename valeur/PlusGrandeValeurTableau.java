@@ -31,6 +31,15 @@ int plusGrand = tableau[0]; // Suppose que le plus grand est le premier élémen
 int plusPetit = tableau[0]; // Suppose que le plus petit est le premier élément du tableau.
 int indexPlusGrand = 0; // Initialise l'index du plus grand.
 int indexPlusPetit = 0; // Initialise l'index du plus petit.
+
+  //  Affichage du contenu du tableau et recherche le plus grand et le plus petit nombre.
+  System.out.println(" ***** Affichage du Tableau ***** :");
+
+  for (int i = 0; i < tableau.length; i++) {
+      //  Affichage de  l'élément actuel avec son index.
+      System.out.println("Tableau [" + i + "]: " + tableau[i]);
+
         
+}
 }
 }
