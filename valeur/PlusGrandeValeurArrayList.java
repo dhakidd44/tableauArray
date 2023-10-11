@@ -33,15 +33,18 @@ public class PlusGrandeValeurArrayList {
             liste.add(valeurAleatoire); // Ajoute la valeur générée à l'ArrayList.
         }
 
-        // Initialisation des variables pour stocker le plus grand, le plus petit, et leurs index correspondants.
+        // Initialisation des variables pour stocker le plus grand, le plus petit, et
+        // leurs index correspondants.
         int plusGrand = liste.get(0); // Suppose que le plus grand est le premier élément de la liste.
         int plusPetit = liste.get(0); // Suppose que le plus petit est le premier élément de la liste.
         int indexPlusGrand = 0; // Initialise l'index du plus grand.
         int indexPlusPetit = 0; // Initialise l'index du plus petit.
 
-        // Affichage du contenu de l'ArrayList et recherche le plus grand et le plus petit nombre.
+        // Affichage du contenu de l'ArrayList et recherche le plus grand et le plus
+        // petit nombre.
         System.out.println(" ***** Affichage de notre liste *****");
-        // Affichage du contenu de l'ArrayList et recherche le plus grand et le plus petit nombre.
+        // Affichage du contenu de l'ArrayList et recherche le plus grand et le plus
+        // petit nombre.
         System.out.println(" ***** Affichage de notre liste *****");
 
         for (int i = 0; i < liste.size(); i++) {
@@ -61,12 +64,11 @@ public class PlusGrandeValeurArrayList {
             }
         }
 
-        // Affichage du résultat, y compris les indices des plus grands et des plus petits nombres.
-        System.out.println("Le plus grand nombre de notre liste est : " + plusGrand); 
+        // Affichage du résultat, y compris les indices des plus grands et des plus
+        // petits nombres.
+        System.out.println("Le plus grand nombre de notre liste est : " + plusGrand);
         System.out.println("Le plus grand nombre est à l'index : " + indexPlusGrand);
         System.out.println("Le plus petit nombre de notre liste est : " + plusPetit);
         System.out.println("Le plus  petit nombre est à l'index : " + indexPlusPetit);
     }
-    }
-
-    
+}
