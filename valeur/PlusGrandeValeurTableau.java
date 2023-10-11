@@ -26,20 +26,41 @@ public class PlusGrandeValeurTableau {
             tableau[i] = rand.nextInt(101); // Génère des entiers aléatoires de 0 à 100.
         }
 
-// Initialisationsdes variables pour stocker le plus grand, le plus petit, et leurs index correspondants.
-int plusGrand = tableau[0]; // Suppose que le plus grand est le premier élément du tableau.
-int plusPetit = tableau[0]; // Suppose que le plus petit est le premier élément du tableau.
-int indexPlusGrand = 0; // Initialise l'index du plus grand.
-int indexPlusPetit = 0; // Initialise l'index du plus petit.
+        // Initialisationsdes variables pour stocker le plus grand, le plus petit, et
+        // leurs index correspondants.
+        int plusGrand = tableau[0]; // Suppose que le plus grand est le premier élément du tableau.
+        int plusPetit = tableau[0]; // Suppose que le plus petit est le premier élément du tableau.
+        int indexPlusGrand = 0; // Initialise l'index du plus grand.
+        int indexPlusPetit = 0; // Initialise l'index du plus petit.
 
-  //  Affichage du contenu du tableau et recherche le plus grand et le plus petit nombre.
-  System.out.println(" ***** Affichage du Tableau ***** :");
+        // Affichage du contenu du tableau et recherche le plus grand et le plus petit
+        // nombre.
+        System.out.println(" ***** Affichage du Tableau ***** :");
 
-  for (int i = 0; i < tableau.length; i++) {
-      //  Affichage de  l'élément actuel avec son index.
-      System.out.println("Tableau [" + i + "]: " + tableau[i]);
+        for (int i = 0; i < tableau.length; i++) {
+            // Affichage de l'élément actuel avec son index.
+            System.out.println("Tableau [" + i + "]: " + tableau[i]);
 
-        
-}
-}
+            // Mise à jour le plus grand nombre si une valeur plus grande est trouvée.
+            if (tableau[i] > plusGrand) {
+                plusGrand = tableau[i];
+                indexPlusGrand = i;
+            }
+
+            // Mise à jour le plus petit nombre si une valeur plus petite est trouvée.
+            if (tableau[i] < plusPetit) {
+                plusPetit = tableau[i];
+                indexPlusPetit = i;
+            }
+
+        }
+
+        // Affichage du résultat, y compris les indices des plus grands et des plus
+        // petits nombres.
+        System.out.println("Le plus grand nombre du tableau est : " + plusGrand);
+        System.out.println("Le plus grand nombre est à l'index : " + indexPlusGrand);
+        System.out.println("Le plus petit nombre du tableau est : " + plusPetit);
+        System.out.println("Le plus petit nombre est à l'index : " + indexPlusPetit);
+
+    }
 }
